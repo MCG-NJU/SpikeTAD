@@ -222,6 +222,7 @@ def load_state_dict(model, state_dict, prefix='', ignore_missing="relative_posit
 
 def save_model(model, model_without_ddp): 
     output_dir = Path("./ann2snn_checkpoints") 
+    output_dir.mkdir(parents=True, exist_ok=True)
     savename="ann2snn"
     checkpoint_paths = [output_dir / (savename+'.pth')]
     for checkpoint_path in checkpoint_paths:

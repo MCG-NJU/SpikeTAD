@@ -1,5 +1,7 @@
 # News
-[2026.3.30] The SNN models of SpikeTAD for THUMOS14 and ActivityNet-1.3 is updated. Code for training will be updated soon.<br>
+[2026.3.30] Training code featuring ANN-to-SNN conversion capabilities is now available. <br>
+
+[2026.3.27] The SNN models of SpikeTAD for THUMOS14 and ActivityNet-1.3 is updated. Code for training will be updated soon.<br>
 
 # Overview
 
@@ -59,7 +61,7 @@ You can download SNN checkpoints for SpikeTAD from Google Drive [link](https://d
 
 # How to use
 
-Please run the following commad for inference.
+Please run the following commad for inference. Tips: It requires 4 GPUs with at least 32GB of VRAM each.
 
 For **THUMOS14**,
 
@@ -71,6 +73,12 @@ For **ActivityNet-1.3**,
 
 ``` 
 bash scripts/spiketad_anet.sh
+```
+
+Please run the following commad for whole training and inference processes on THUMOS-14.
+
+```
+bash scripts/spiketad_thumos_train.sh
 ```
 
 # Credits

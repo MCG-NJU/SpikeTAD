@@ -75,7 +75,7 @@ For **ActivityNet-1.3**,
 bash scripts/spiketad_anet.sh
 ```
 
-Please run the following commad for whole training and inference processes on THUMOS-14.
+Please run the following command to execute the complete training and inference pipeline on THUMOS-14.
 
 ```
 bash scripts/spiketad_thumos_train.sh
